@@ -6,7 +6,7 @@ import mimetypes
 def lambda_handler(event, context):
     
     sns = boto3.resource('sns')
-    topic = sns.Topic('arn:aws:sns:eu-west-1:403379308241:deployPortfolioTopic')    
+    topic = sns.Topic('arn:aws:sns:eu-west-2:403379308241:deployPortfolioTopic')    
     
     try:
         s3 = boto3.resource('s3')
